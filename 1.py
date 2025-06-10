@@ -40,6 +40,7 @@ ciphertexts = [(oracle_encrypt(p1), oracle_encrypt(p2)) for p1, p2 in pairs]
 candidates = set(range(16))  # All possible subkeys: 0 to 15
 for (c1, c2) in ciphertexts:
     delta_c = xor(c1, c2)
+    # print(delta_c)
     delta_r2 = delta_c[4:]
     delta_f2 = xor("0010", delta_r2)
     print("delta f2:",delta_f2)
@@ -51,6 +52,7 @@ for (c1, c2) in ciphertexts:
         if xor(sbox(xor(l2, k2_str)), sbox(xor(l2_prime, k2_str))) == delta_f2:  # delta_f2 is the difference between r2 and r2_prime, minus the differential we added.
             # so if the condition above is true over the full loop, that means this k2_str, is causing the same difference in the sbox, for all the pairs
             new_candidates.add(k2)
+            print(k2_str, "is a possible subkey2")
     candidates = candidates.intersection(new_candidates)
     if len(candidates) == 1:
         break
