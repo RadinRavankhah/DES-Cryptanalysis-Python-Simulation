@@ -93,7 +93,7 @@ This shows the encryption process and the attack narrowing down to the correct s
 
 ## Diagram of Simplified DES Cryptanalysis
 
-[diagram of simplified des cryptanalysis](https://github.com/RadinRavankhah/DES-Cryptanalysis-Python-Simulation/blob/main/des_cryptanalysis_diagram.png)
+![Diagram of Simplified DES Cryptanalysis](https://github.com/RadinRavankhah/DES-Cryptanalysis-Python-Simulation/blob/main/des_cryptanalysis_diagram.png)
 
 ## Tips for Students
 
