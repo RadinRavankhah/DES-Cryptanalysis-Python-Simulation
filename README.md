@@ -1,4 +1,3 @@
-
 # Simplified DES Cryptanalysis Simulation
 
 This project contains a Python script that demonstrates a simplified version of the Data Encryption Standard (DES) cipher and shows how to break it using differential cryptanalysis. It’s designed for educational purposes to help students understand how block ciphers work and how cryptanalysis can find secret keys. The code is simple and uses an 8-bit block cipher with a single S-box, unlike the real DES, which is more complex.
@@ -91,6 +90,10 @@ Recovered subkey2: 0111
 ```
 
 This shows the encryption process and the attack narrowing down to the correct subkey.
+
+## Diagram of Simplified DES Cryptanalysis
+
+[diagram of simplified des cryptanalysis](https://github.com/RadinRavankhah/DES-Cryptanalysis-Python-Simulation/blob/main/des_cryptanalysis_diagram.png)
 
 ## Tips for Students
 
